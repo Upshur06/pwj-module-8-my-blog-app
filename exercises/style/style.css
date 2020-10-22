@@ -7,6 +7,38 @@ body {
     text-decoration: none;
 }
 
+header{
+    min-height: 350px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/sankofa.jpg);
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: center;
+}
+
+.profile-image{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url(/assets/profile_pic.jpg);
+    background-size: cover;
+}
+
+.profile-name{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.subtext{
+    margin-top: 8px;
+}
+
 
 
 footer {
