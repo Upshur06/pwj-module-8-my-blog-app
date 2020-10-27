@@ -7,6 +7,27 @@ body {
   text-decoration: none;
 }
 
+.nav-button.new-post-button{
+    width: 50px;
+    height: 50px;
+    background-color: #004186;
+    color: white;
+    font-size: 24px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+    transition: all 0.25s ease;
+}
+
+.nav-button.new-post-button:hover{
+    background-color: #002349;
+}
+
 header {
   min-height: 350px;
   background-color: black;
@@ -73,6 +94,7 @@ header::after {
   min-height: 200px;
   overflow: hidden;
   transition: all 0.25s ease;
+  margin-top: 24px;
 }
 
 .post:hover {
