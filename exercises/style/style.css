@@ -7,38 +7,36 @@ body {
   text-decoration: none;
 }
 
-.nav-button.new-post-button{
-    width: 50px;
-    height: 50px;
-    background-color: #004186;
-    color: white;
-    font-size: 24px;
-    border-radius: 50%;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
-    transition: all 0.25s ease;
+.nav-button.new-post-button {
+  width: 50px;
+  height: 50px;
+  background-color: #004186;
+  color: white;
+  font-size: 24px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: all 0.25s ease;
 }
 
-.nav-button.new-post-button:hover{
-    background-color: #002349;
+.nav-button.new-post-button:hover {
+  background-color: #002349;
 }
 
 header {
   min-height: 350px;
-  background-color: black;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(/assets/sankofa.jpg);
   background-repeat: no-repeat;
-  background-size: contain, cover;
+  background-size: cover;
   background-position: center;
 }
 
@@ -56,7 +54,17 @@ header::after {
   background-color: rgba(0, 0, 0, 0.4);
 } */
 
-.profile-image {
+.home-page header,
+.new-post-page header {
+  background-image: url(/assets/sankofa.jpg);
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+  background-position: center;
+}
+
+.profile-image,
+.title {
   height: 100px;
   width: 100px;
   background-color: white;
@@ -85,6 +93,7 @@ header::after {
   width: 100%;
   padding-left: 16px;
   padding-right: 16px;
+  margin: auto;
 }
 
 .post {
@@ -98,14 +107,13 @@ header::after {
 }
 
 .post:hover {
- cursor: pointer;
-  transform: translate3d(0, -7px,0);
-  box-shadow: 0 2rem 5rem 0 rgba(0,0,0,.1);
+  cursor: pointer;
+  transform: translate3d(0, -7px, 0);
+  box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.1);
 }
 
 .post-image {
   flex-basis: 40%;
-  background-image: url(https://images.unsplash.com/photo-1537882111161-c3379a777c8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80);
   background-size: cover;
   background-position: center;
 }
@@ -150,4 +158,8 @@ footer {
   align-items: center;
   margin-top: 40px;
   font-size: 14px;
+}
+
+a.post-link {
+  text-decoration: none;
 }
